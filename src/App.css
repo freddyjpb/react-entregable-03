@@ -1,0 +1,17 @@
+.App {
+  border: 1px dashed blue;
+  padding: 2vw;
+}
+
+.App__banner {
+
+  background-image: url('/rambanner.png');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc (100vw-4vw); height: 34.5vw;
+  max-width: 1160px; max-height: 400px;
+  padding: 16px;
+  margin: auto;
+  text-align: center;
+}
