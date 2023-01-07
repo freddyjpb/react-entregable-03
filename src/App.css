@@ -1,17 +1,8 @@
-.App {
-  border: 1px dashed blue;
-  padding: 2vw;
-}
+.app__residentcard--container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+    display: flex; flex-direction: row;
+    flex-wrap: wrap;
 
-.App__banner {
-
-  background-image: url('/rambanner.png');
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc (100vw-4vw); height: 34.5vw;
-  max-width: 1160px; max-height: 400px;
-  padding: 16px;
-  margin: auto;
-  text-align: center;
 }
