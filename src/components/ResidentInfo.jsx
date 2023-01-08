@@ -24,9 +24,16 @@ const ResidentInfo = ({ url }) => {
                 <section className='card__body'>
                     <h3>{resident?.name}</h3>
                     <ul>
-                        <li><span>Species</span><span>{resident?.species}</span></li>
-                        <li><span>Origin</span><span>{resident?.origin.name}</span></li>
-                        <li><span>Episodes where appear</span><span>{resident?.episode.length}</span></li>
+                        <li>
+                            <span className='card__body-caracteristics-tittle'>Species</span>
+                            <span>{resident?.species}</span>
+                        </li>
+                        <li>
+                            <span className='card__body-caracteristics-tittle'>Origin</span>
+                            <span>{resident?.origin.name}</span></li>
+                        <li>
+                            <span className='card__body-caracteristics-tittle'>Episodes where appear</span>
+                            <span>{resident?.episode.length}</span></li>
                     </ul>
                 </section>
             </article>

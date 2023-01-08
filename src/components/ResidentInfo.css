@@ -40,4 +40,13 @@
 
 .card__body {
     padding:15px;
+  
+}
+
+.card__body span {
+    display: block;  
+}
+
+.card__body-caracteristics-tittle {
+    text-transform: uppercase;
 }
