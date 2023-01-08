@@ -1,10 +1,10 @@
 
 .card {
     background-color: aqua;
-    width: 220px;
-    margin: 4px;
+    width: 44vw;
+    margin: 4vw 0 0 4vw;
 
-    border-radius:10px ;
+    border-radius: 4vw;
  
 
 
@@ -12,5 +12,5 @@
 
 .card img {
     width: 100%;
-    border-radius:10px 10px 0 0;
+    border-radius:4vw 4vw 0 0;
 }
