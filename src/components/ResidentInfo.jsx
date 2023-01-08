@@ -16,12 +16,12 @@ const ResidentInfo = ({ url }) => {
             <article>
                 <header>
                     <img src={resident?.image} alt="" />
-                    <div>
-                        <span></span>
+                    <div className='card__status'>
+                        <div className='card__status-circle'></div>
                         <span>{resident?.status}</span>
                     </div>
                 </header>
-                <section>
+                <section className='card__body'>
                     <h3>{resident?.name}</h3>
                     <ul>
                         <li><span>Species</span><span>{resident?.species}</span></li>

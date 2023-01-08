@@ -1,7 +1,7 @@
 /*=============================================================================================*/
 /* F U E N T E S
 /*=============================================================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /*=============================================================================================*/
 /* S E L E C T O R   U N I V E R S A L
@@ -11,6 +11,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
