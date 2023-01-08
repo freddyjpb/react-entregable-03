@@ -9,7 +9,7 @@ import './App.css';
 function App() {
   const [location, setLocation] = useState();
   const [locationInput, setLocationInput] = useState();
-  const [errorLocation, setErrorLocation] = useState( false );
+  const [errorLocation, setErrorLocation] = useState(false);
 
   useEffect(() => {
     let locationURL;
@@ -23,12 +23,12 @@ function App() {
 
     axios.get(locationURL)
       .then(res => {
-        setErrorLocation( false );
-        setLocation( res.data );
+        setErrorLocation(false);
+        setLocation(res.data);
       })
       .catch(err => {
-        setErrorLocation( true );
-        console.log( err );
+        setErrorLocation(true);
+        console.log(err);
       });
   }, [locationInput]);
 
@@ -40,11 +40,17 @@ function App() {
 
   return (
     <div className="App">
+      <div className='app__banner'>
+        <div className='app__banner--background'>
+          <div className='app__banner--search-box'>
+            <form onSubmit={handleSubmit}>
+              <input className='tempo' id='inputSearch' type="text" />
+              <button>Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
       <h1>Rick and Morty</h1>
-      <form onSubmit={handleSubmit}>
-        <input id='inputSearch' type="text" />
-        <button>Search</button>
-      </form>
       {errorLocation ? (
         <ErrorLocation />
       ) : (

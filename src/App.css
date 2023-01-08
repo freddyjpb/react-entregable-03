@@ -1,5 +1,42 @@
+.app__banner {
+    width: 100%; height: 352px;
+    max-width: 1670px;
+    padding: 16px;
+    margin: auto;
+}
+
+.app__banner--background {
+
+    /*width: calc(288px + (1638 - 288) * ((100vw - 320px) / (1670 - 320)));*/
+    width: 100%;
+    height: 100%;
+    background-image: url('/rambanner.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.app__banner--search-box {
+    top: 80%;
+    left: 50%;
+    position: absolute;
+}
+
+.tempo {
+    width: 30%;
+    height: 20%;
+}
+
+.app__banner--search-box form {
+    width: 400px;
+}
+
+
 .app__residentcard--container {
-    max-width: 1432px;
+    max-width: 1670px;
     padding: 16px;
     margin: auto;
     display: flex;
@@ -7,3 +44,5 @@
     flex-wrap: wrap;
     gap: 16px;
 }
+
+/*border: 1px dashed blue;*/
