@@ -1,25 +1,21 @@
 .card {
     background-color: aqua;
+    width: 100%; height: auto;
+    max-width: 220px;
+    border-radius: 16px;
     position: relative;
-    width: 44vw;
-    margin: 4vw 0 0 4vw;
-
-    border-radius: 4vw;
- 
-
-
 }
 
 .card img {
     width: 100%;
-    border-radius:4vw 4vw 0 0;
+    border-radius:16px 16px 0 0;
 }
 
 .card__status {
-    position: absolute;
-    top: 10%;
-    width: 40%;
     background-color: black;
+    width: 50%;
+    top: 10%;
+
     padding-top: 5px;
     padding-left: 10px;
     padding-bottom: 5px;
@@ -28,19 +24,26 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    position: absolute;
 }
 
 .card__status-circle {
+    background-color: gray;
     width: 15px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: red;
+}
 
+.Alive {
+    background-color: green;
+}
+
+.Dead {
+    background-color: red;
 }
 
 .card__body {
-    padding:15px;
-  
+    padding:15px;  
 }
 
 .card__body span {
@@ -49,4 +52,27 @@
 
 .card__body-caracteristics-tittle {
     text-transform: uppercase;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.507);
+    font-weight: bold;
+    /*position: relative;*/
+    /*left: 0.8em;*/
+    
 }
+
+
+/*.card {
+    background-color: aqua;
+    position: relative;
+    width: 44vw; height: auto;
+    margin: 4vw 0 0 4vw;
+    border-radius: 4vw;
+}*/
+
+/*.card {
+    background-color: aqua;
+    position: relative;
+    width: 100%; height: auto;
+    max-width: 300px;
+    border-radius: 4vw;
+}*/

@@ -1,7 +1,9 @@
 .app__residentcard--container {
-    max-width: 1200px;
+    max-width: 1432px;
+    padding: 16px;
     margin: auto;
-    display: flex; flex-direction: row;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-
+    gap: 16px;
 }
