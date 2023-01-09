@@ -2,7 +2,23 @@
     background-color:aqua;
     width: 100%; height: auto;
     padding: 16px;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    border-radius:0 0 16px 16px;
+}
+
+.location__info--1 {
+    width: 100%; height: auto;
+    padding: calc(2px + (8 - 2) * ((100vw - 350px) / (1400 - 350)));
+    display: flex;
+    justify-content: center;
+    border-radius: calc(4px + (16 - 4) * ((100vw - 350px) / (1400 - 350)));
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.location__info--2 {
+    width: 100%; height: auto;
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;
-    
 }

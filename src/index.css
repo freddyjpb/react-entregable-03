@@ -34,4 +34,8 @@ img {
 
 input {
     outline: none;
+
 }
+
+.h2-autoresize { font-size: calc(12px + (24 - 12) * ((100vw - 350px) / (1400 - 350))); }
+.h3-autoresize { font-size: calc(8px + (16 - 8) * ((100vw - 350px) / (1400 - 350))); }

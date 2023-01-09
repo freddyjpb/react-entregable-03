@@ -58,15 +58,9 @@ function App() {
             </div>
           )}
         </div>
-
         <div>
-
-
-
         </div>
-
       </div>
-
       <div className='app__residentcard--container'>
         {
           location?.residents.map(url => (
@@ -74,8 +68,6 @@ function App() {
           ))
         }
       </div>
-
-
     </div>
   )
 }
