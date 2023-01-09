@@ -1,0 +1,8 @@
+.location__info {
+    background-color:aqua;
+    width: 100%; height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+}

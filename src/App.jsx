@@ -49,22 +49,33 @@ function App() {
             </form>
           </div>
         </div>
-      </div>
-      <h1>Rick and Morty</h1>
-      {errorLocation ? (
-        <ErrorLocation />
-      ) : (
-        <div>
-          <LocationInfo location={location} />
-          <div className='app__residentcard--container'>
-            {
-              location?.residents.map(url => (
-                <ResidentInfo key={url} url={url} />
-              ))
-            }
-          </div>
+        <div className='app__banner--location'>
+          {errorLocation ? (
+            <ErrorLocation />
+          ) : (
+            <div>
+              <LocationInfo location={location} />
+            </div>
+          )}
         </div>
-      )}
+
+        <div>
+
+
+
+        </div>
+
+      </div>
+
+      <div className='app__residentcard--container'>
+        {
+          location?.residents.map(url => (
+            <ResidentInfo key={url} url={url} />
+          ))
+        }
+      </div>
+
+
     </div>
   )
 }

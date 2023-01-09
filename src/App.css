@@ -1,21 +1,23 @@
+.App {
+    padding: 0 16px 0 16px;
+}
+
 .app__banner {
-    width: 100%; height: 352px;
-    max-width: 1670px;
-    padding: 16px;
-    margin: auto;
+    width: 100%; height: 268px;
+    max-width: 1400px;
+    position: fixed;
+    left: 50%;
+    top: 0%;
+transform: translate(-50%, 0%);
 }
 
 .app__banner--background {
-
-    /*width: calc(288px + (1638 - 288) * ((100vw - 320px) / (1670 - 320)));*/
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 19.145vw;
     background-image: url('/rambanner.png');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    border-radius: 15px 15px 0 0;
     position: relative;
 }
 
@@ -34,11 +36,16 @@
     width: 400px;
 }
 
+.app__banner--location {
+}
+
+
+
 
 .app__residentcard--container {
-    max-width: 1670px;
-    padding: 16px;
+    max-width: 1400px;
     margin: auto;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
