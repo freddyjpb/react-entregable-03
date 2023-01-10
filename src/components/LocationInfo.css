@@ -1,5 +1,6 @@
 .location__info {
-    background-color:aqua;
+    background-color:green;
+    color: white;
     width: 100%; 
     height: calc(76px + (112 - 76) * ((100vw - 350px) / (1400 - 350)));
     max-width: 1400px;
