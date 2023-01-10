@@ -1,6 +1,7 @@
 .errorlocation {
     width: 50vw;
     height: auto;
+    max-width: 600px;
     margin: auto;
     margin-top: 32px;
     display: flex;
