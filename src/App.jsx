@@ -1,5 +1,8 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
+import loaderLogo from './assets/cdlogo.png';
+
 import ErrorLocation from './components/ErrorLocation';
 import LocationInfo from './components/LocationInfo';
 import ResidentInfo from './components/ResidentInfo';
@@ -7,10 +10,15 @@ import ResidentInfo from './components/ResidentInfo';
 import './App.css';
 
 function App() {
+  const [showElement, setShowElement] = useState(true);
   const [location, setLocation] = useState();
   const [locationInput, setLocationInput] = useState();
   const [errorLocation, setErrorLocation] = useState(false);
 
+  useEffect(() => {
+    setTimeout(function () { setShowElement(false); }, 10000);
+  }, []);
+  
   useEffect(() => {
     let locationURL;
 
@@ -40,6 +48,14 @@ function App() {
 
   return (
     <div className="App">
+      <div className="App__loader--container">
+        {showElement ? (
+          <div className="App__loader--image" style={{ opacity: showElement ? 1 : 0 }} >
+            <img src={loaderLogo} />
+          </div>)
+          :
+          (<div></div>)}{" "}
+      </div>
       <div className='app__banner'>
         <div className='app__banner--background'>
           <div className='app__banner--search-box'>
