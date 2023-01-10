@@ -1,0 +1,13 @@
+.errorlocation {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errorlocation img {
+    width: 75%;
+}
