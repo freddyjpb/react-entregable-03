@@ -55,18 +55,16 @@ function App() {
           ) : (
             <div>
               <LocationInfo location={location} />
+              <div className='app__residentcard--container'>
+                {
+                  location?.residents.map(url => (
+                    <ResidentInfo key={url} url={url} />
+                  ))
+                }
+              </div>
             </div>
           )}
         </div>
-        <div>
-        </div>
-      </div>
-      <div className='app__residentcard--container'>
-        {
-          location?.residents.map(url => (
-            <ResidentInfo key={url} url={url} />
-          ))
-        }
       </div>
     </div>
   )

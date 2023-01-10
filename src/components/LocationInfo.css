@@ -1,7 +1,11 @@
 .location__info {
     background-color:aqua;
-    width: 100%; height: auto;
+    width: 100%; 
+    height: calc(76px + (112 - 76) * ((100vw - 350px) / (1400 - 350)));
+    max-width: 1400px;
+    max-height: 112px;
     padding: 16px;
+    margin: auto;
     display: flex; flex-direction: column;
     justify-content: center;
     border-radius:0 0 16px 16px;
