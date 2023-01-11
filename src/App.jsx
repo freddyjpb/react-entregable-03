@@ -14,12 +14,10 @@ function App() {
   const [location, setLocation] = useState();
   const [locationInput, setLocationInput] = useState();
   const [errorLocation, setErrorLocation] = useState(false);
-
-  useEffect(() => {
-    setTimeout(function () { setShowElement(false); }, 10000);
-  }, []);
   
   useEffect(() => {
+    setTimeout(function () { setShowElement(false); }, 5000);
+ 
     let locationURL;
 
     if (locationInput) {
@@ -41,6 +39,7 @@ function App() {
   }, [locationInput]);
 
   const handleSubmit = e => {
+    setShowElement( true );
     e.preventDefault();
     //console.log( e.target.inputSearch.value );
     setLocationInput(e.target.inputSearch.value);
